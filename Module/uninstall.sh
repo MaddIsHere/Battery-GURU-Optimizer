@@ -15,6 +15,8 @@ echo 'N' > /sys/module/workqueue/parameters/power_efficient
 #---------------< THERMAL OPTIMIZATIONS >---------------#
 system_table_unset activity_manager_constants
 pm enable com.google.android.gms/.chimera.GmsIntentOperationService
+pm enable com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService
+pm enable com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService
 
 #---------------< SWAP OPTIMIZATIONS >---------------#
 echo '0' > /proc/sys/vm/dirty_ratio

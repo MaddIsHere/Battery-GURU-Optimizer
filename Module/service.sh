@@ -24,6 +24,8 @@ echo 2 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus; echo 4 > /sys/devices/s
 echo 80 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres; echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms; echo 60 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
 chmod 444 /sys/devices/system/cpu/cpu[0-7]/max_cpus
 pm disable com.google.android.gms/.chimera.GmsIntentOperationService
+pm disable com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService
+pm disable com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService
 
 #---------------< SWAP OPTIMIZATIONS >---------------#
 # swapset_on=1
